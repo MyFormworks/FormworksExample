@@ -1,42 +1,59 @@
 {
-    "title": "Frango Frito Box - Pesquisa",
-    "components": [
-        {
-            "title": "Qual é seu nome?",
-            "componentType": "plain_text",
-            "errorMessage": "Esse campo é obrigatório, por favor o preencha.",
-            "required": true,
-            "specs": {
-                "placeholder": "Digite seu nome aqui"
+    "id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+    "title": "Formworks Title",
+    "responseFormat": "long",
+    "style": {
+        "accent": "",
+        "background": "",
+        "componentBackground": "",
+        "componentTitle": "",
+        "componentDescription": "",
+        "componentInputText": "",
+        "componentInputBackground": "",
+        "componentRequired": "",
+        "componentCorrect": ""
+      },
+    "components": [{
+            "text": {
+                "id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+                "title": "What is your name?",
+                "description": "Type your name.",
+                "required": true,
+                "validator": "max32",
+                "placeholder": "Your name",
+                "isMultiline": false
             }
         },
         {
-            "title": "Por que escolheu Frango Frito Box?",
-            "subtitle": "Em um curto texto, fale o motivo que o fez comer Frango Frito Box.",
-            "componentType": "plain_text",
-            "errorMessage": "Esse campo é obrigatório, por favor o preencha.",
-            "required": true,
-            "specs": {
-                "placeholder": "Digite seu comentário aqui."
+            "text": {
+                "id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+                "title": "What is your e-mail?",
+                "description": "Type your e-mail.",
+                "required": true,
+                "validator": "email",
+                "placeholder": "youremail@example.org",
+                "isMultiline": false
             }
         },
         {
-            "title": "O que você acha de criarmos uma sessão gourmet?",
-            "subtitle": "Esta sessão tiraria o foco de fast-food e procuraria usar ingredientes orgânicos porém mais caros.",
-            "componentType": "numerical",
-            "errorMessage": "Esse campo é obrigatório, por favor o preencha. Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.Esse campo é obrigatório, por favor o preencha.",
-            "required": true,
-            "specs": {
-                "placeholder": "Digite seu comentário aqui."
+            "text": {
+                "id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+                "title": "Tell us a little bit about yourself",
+                "description": "We want to know more about you.",
+                "validator": "max32",
+                "isMultiline": true
             }
         },
         {
-            "title": "Deixe um comentário!",
-            "subtitle": "Se quiser, deixe um comentário, sugestão ou reclamação.",
-            "componentType": "email",
-            "required": false,
-            "specs": {
-                "placeholder": "Digite seu comentário aqui."
+            "text": {
+                "id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+                "title": "What is your mother's name?",
+                "description": "Type your name.",
+                "required": true,
+                "validator": "custom",
+                "regex": "^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$",
+                "placeholder": "Your mother's name",
+                "isMultiline": false
             }
         }
     ]

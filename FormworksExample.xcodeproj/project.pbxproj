@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F06CA8C2559CC990003DA9A /* FromDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06CA8B2559CC990003DA9A /* FromDelegate.swift */; };
 		4F0D5FB4255477FA002B7EEB /* MenuCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */; };
 		4F0D5FB725547807002B7EEB /* MenuCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */; };
 		4F0D5FBA25547BC5002B7EEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB925547BC5002B7EEB /* Coordinator.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F06CA8B2559CC990003DA9A /* FromDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromDelegate.swift; sourceTree = "<group>"; };
 		4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4F0D5FB925547BC5002B7EEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				4F0D5FC125547C63002B7EEB /* MenuViewModel.swift */,
 				4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */,
 				4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */,
+				4F06CA8B2559CC990003DA9A /* FromDelegate.swift */,
 			);
 			path = MenuViewController;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				4F657B4725534C480045F2C7 /* MenuCollectionViewCell.swift in Sources */,
 				4F0D5FBD25547BD7002B7EEB /* MainCoordinator.swift in Sources */,
 				4F0D5FB725547807002B7EEB /* MenuCollectionViewDataSource.swift in Sources */,
+				4F06CA8C2559CC990003DA9A /* FromDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
