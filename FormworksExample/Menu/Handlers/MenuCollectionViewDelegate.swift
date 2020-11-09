@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MenuCollectionViewDelegate: NSObject, UICollectionViewDelegateFlowLayout {
+class MenuCollectionViewDelegate: NSObject, UICollectionViewDelegate{
     let viewController: MenuViewController
     
     init(viewController: MenuViewController) {

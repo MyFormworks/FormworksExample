@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F06CA8C2559CC990003DA9A /* FromDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06CA8B2559CC990003DA9A /* FromDelegate.swift */; };
+		4F06CA8C2559CC990003DA9A /* FormDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06CA8B2559CC990003DA9A /* FormDelegate.swift */; };
 		4F0D5FB4255477FA002B7EEB /* MenuCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */; };
 		4F0D5FB725547807002B7EEB /* MenuCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */; };
 		4F0D5FBA25547BC5002B7EEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB925547BC5002B7EEB /* Coordinator.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F06CA8B2559CC990003DA9A /* FromDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FromDelegate.swift; sourceTree = "<group>"; };
+		4F06CA8B2559CC990003DA9A /* FormDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDelegate.swift; sourceTree = "<group>"; };
 		4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4F0D5FB925547BC5002B7EEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 		4FACD22225534772002B745F = {
 			isa = PBXGroup;
 			children = (
-				4F0D5FC4255493DD002B7EEB /* Example.json */,
 				4FACD22D25534772002B745F /* FormworksExample */,
 				4FACD22C25534772002B745F /* Products */,
 			);
@@ -84,9 +83,10 @@
 		4FACD22D25534772002B745F /* FormworksExample */ = {
 			isa = PBXGroup;
 			children = (
-				4F0D5FB925547BC5002B7EEB /* Coordinator.swift */,
-				4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */,
-				4FACD24425534904002B745F /* MenuViewController */,
+				CBD1431B2559F87900275D39 /* JSONs */,
+				CBD1431A2559F85200275D39 /* Coordinators */,
+				CBD143182559F83900275D39 /* Form */,
+				4FACD24425534904002B745F /* Menu */,
 				4FACD22E25534772002B745F /* AppDelegate.swift */,
 				4FACD23025534772002B745F /* SceneDelegate.swift */,
 				4FACD23725534775002B745F /* Assets.xcassets */,
@@ -96,17 +96,49 @@
 			path = FormworksExample;
 			sourceTree = "<group>";
 		};
-		4FACD24425534904002B745F /* MenuViewController */ = {
+		4FACD24425534904002B745F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				CBD143172559F7F100275D39 /* Handlers */,
 				4F657B4525534C2F0045F2C7 /* Views */,
 				4FACD23225534772002B745F /* MenuViewController.swift */,
 				4F0D5FC125547C63002B7EEB /* MenuViewModel.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CBD143172559F7F100275D39 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
 				4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */,
 				4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */,
-				4F06CA8B2559CC990003DA9A /* FromDelegate.swift */,
 			);
-			path = MenuViewController;
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		CBD143182559F83900275D39 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				4F06CA8B2559CC990003DA9A /* FormDelegate.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		CBD1431A2559F85200275D39 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4F0D5FB925547BC5002B7EEB /* Coordinator.swift */,
+				4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CBD1431B2559F87900275D39 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				4F0D5FC4255493DD002B7EEB /* Example.json */,
+			);
+			path = JSONs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +227,7 @@
 				4F657B4725534C480045F2C7 /* MenuCollectionViewCell.swift in Sources */,
 				4F0D5FBD25547BD7002B7EEB /* MainCoordinator.swift in Sources */,
 				4F0D5FB725547807002B7EEB /* MenuCollectionViewDataSource.swift in Sources */,
-				4F06CA8C2559CC990003DA9A /* FromDelegate.swift in Sources */,
+				4F06CA8C2559CC990003DA9A /* FormDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
