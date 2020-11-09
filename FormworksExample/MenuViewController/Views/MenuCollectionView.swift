@@ -24,7 +24,7 @@ final class MenuCollectionView: UICollectionView {
         
         let item = NSCollectionLayoutItem(layoutSize: itemLayoutSize)
         
-        let groupLayoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.5))
+        let groupLayoutSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(0.3))
         
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupLayoutSize, subitems: [item])
         

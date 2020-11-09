@@ -53,6 +53,8 @@ class MenuViewController: UIViewController {
         switch button.tag {
         case 0:
             self.viewModel.coordinator.present(form: .example)
+        case 1:
+            self.viewModel.coordinator.present(form: .example)
         default:
             break
         }

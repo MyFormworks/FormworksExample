@@ -8,7 +8,7 @@
 import Foundation
 
 class MenuViewModel {
-    var buttonsNames: [String] = ["Example"]
+    var buttonsNames: [String] = ["Example", "Example 2"]
     var coordinator: MainCoordinator
     
     init(coordinator: MainCoordinator) {
