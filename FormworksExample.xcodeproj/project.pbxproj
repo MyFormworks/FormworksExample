@@ -21,6 +21,7 @@
 		4FACD23825534775002B745F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FACD23725534775002B745F /* Assets.xcassets */; };
 		4FACD23B25534775002B745F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FACD23925534775002B745F /* LaunchScreen.storyboard */; };
 		4FACD24725534964002B745F /* MenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FACD24625534964002B745F /* MenuCollectionView.swift */; };
+		CBD1430D2559F30F00275D39 /* FormDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD1430C2559F30F00275D39 /* FormDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		4FACD23A25534775002B745F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FACD23C25534775002B745F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FACD24625534964002B745F /* MenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionView.swift; sourceTree = "<group>"; };
+		CBD1430C2559F30F00275D39 /* FormDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,6 @@
 		4FACD22225534772002B745F = {
 			isa = PBXGroup;
 			children = (
-				4F0D5FC4255493DD002B7EEB /* Example.json */,
 				4FACD22D25534772002B745F /* FormworksExample */,
 				4FACD22C25534772002B745F /* Products */,
 			);
@@ -82,9 +83,10 @@
 		4FACD22D25534772002B745F /* FormworksExample */ = {
 			isa = PBXGroup;
 			children = (
-				4F0D5FB925547BC5002B7EEB /* Coordinator.swift */,
-				4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */,
-				4FACD24425534904002B745F /* MenuViewController */,
+				CBD1430B2559F2FF00275D39 /* Form */,
+				CBD1430A2559F2ED00275D39 /* Coordinators */,
+				CBD143082559F2C100275D39 /* JSONs */,
+				4FACD24425534904002B745F /* Menu */,
 				4FACD22E25534772002B745F /* AppDelegate.swift */,
 				4FACD23025534772002B745F /* SceneDelegate.swift */,
 				4FACD23725534775002B745F /* Assets.xcassets */,
@@ -94,16 +96,49 @@
 			path = FormworksExample;
 			sourceTree = "<group>";
 		};
-		4FACD24425534904002B745F /* MenuViewController */ = {
+		4FACD24425534904002B745F /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				CBD143102559F37D00275D39 /* Handlers */,
 				4F657B4525534C2F0045F2C7 /* Views */,
 				4FACD23225534772002B745F /* MenuViewController.swift */,
 				4F0D5FC125547C63002B7EEB /* MenuViewModel.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CBD143082559F2C100275D39 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				4F0D5FC4255493DD002B7EEB /* Example.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		CBD1430A2559F2ED00275D39 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				4F0D5FB925547BC5002B7EEB /* Coordinator.swift */,
+				4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		CBD1430B2559F2FF00275D39 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				CBD1430C2559F30F00275D39 /* FormDelegate.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		CBD143102559F37D00275D39 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
 				4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */,
 				4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */,
 			);
-			path = MenuViewController;
+			path = Handlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +221,7 @@
 				4FACD23325534772002B745F /* MenuViewController.swift in Sources */,
 				4FACD22F25534772002B745F /* AppDelegate.swift in Sources */,
 				4F0D5FC225547C63002B7EEB /* MenuViewModel.swift in Sources */,
+				CBD1430D2559F30F00275D39 /* FormDelegate.swift in Sources */,
 				4FACD24725534964002B745F /* MenuCollectionView.swift in Sources */,
 				4FACD23125534772002B745F /* SceneDelegate.swift in Sources */,
 				4F0D5FB4255477FA002B7EEB /* MenuCollectionViewDelegate.swift in Sources */,

@@ -1,0 +1,60 @@
+{
+	"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+	"responseType": "long",
+	"title": "Formworks Title",
+	"style": {
+		"accent": "",
+		"background": "",
+		"componentBackground": "",
+		"componentTitle": "",
+		"componentDescription": "",
+		"componentInputText": "",
+		"componentInputBackground": "",
+		"componentRequired": "",
+		"componentCorrect": ""
+	},
+	"components": [{
+			"text": {
+				"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+				"title": "What is your name?",
+				"description": "Type your name.",
+				"required": true,
+				"validator": "max32",
+				"placeholder": "Your name",
+				"isMultiline": false
+			}
+		},
+		{
+			"text": {
+				"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+				"title": "What is your e-mail?",
+				"description": "Type your e-mail.",
+				"required": true,
+				"validator": "email",
+				"placeholder": "youremail@example.org",
+				"isMultiline": false
+			}
+		},
+		{
+			"text": {
+				"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+				"title": "Tell us a little bit about yourself",
+				"description": "We want to know more about you.",
+				"validator": "max32",
+				"isMultiline": true
+			}
+		},
+		{
+			"text": {
+				"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
+				"title": "What is your mother’s name?",
+				"description": "Type your name.",
+				"required": true,
+				"validator": "custom",
+				"regex": "^[a-zA-Z]+(([’,. -][a-zA-Z ])?[a-zA-Z]*)*$",
+				"placeholder": "Your mother’s name",
+				"isMultiline": false
+			}
+		}
+	]
+}
