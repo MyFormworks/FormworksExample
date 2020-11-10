@@ -10,7 +10,6 @@ import UIKit
 class MenuViewController: UIViewController {
     
     let viewModel: MenuViewModel
-    var collectionViewDelegate: MenuCollectionViewDelegate?
     var collectionViewDataSource: MenuCollectionViewDataSource?
     
     private lazy var collectionView: MenuCollectionView = {
@@ -33,10 +32,9 @@ class MenuViewController: UIViewController {
         super.viewDidLoad()
         self.view.addSubview(collectionView)
         setupConstraints()
-        self.collectionViewDelegate = MenuCollectionViewDelegate(viewController: self)
+
         self.collectionViewDataSource = MenuCollectionViewDataSource(viewController: self)
         collectionView.register(MenuCollectionViewCell.self, forCellWithReuseIdentifier: MenuCollectionViewCell.identifier)
-        collectionView.delegate = collectionViewDelegate
         collectionView.dataSource = collectionViewDataSource
     }
     

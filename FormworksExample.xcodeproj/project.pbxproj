@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F06CA8C2559CC990003DA9A /* FormDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F06CA8B2559CC990003DA9A /* FormDelegate.swift */; };
-		4F0D5FB4255477FA002B7EEB /* MenuCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */; };
 		4F0D5FB725547807002B7EEB /* MenuCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */; };
 		4F0D5FBA25547BC5002B7EEB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FB925547BC5002B7EEB /* Coordinator.swift */; };
 		4F0D5FBD25547BD7002B7EEB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */; };
@@ -26,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		4F06CA8B2559CC990003DA9A /* FormDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDelegate.swift; sourceTree = "<group>"; };
-		4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4F0D5FB925547BC5002B7EEB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 		CBD143172559F7F100275D39 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				4F0D5FB3255477FA002B7EEB /* MenuCollectionViewDelegate.swift */,
 				4F0D5FB625547807002B7EEB /* MenuCollectionViewDataSource.swift */,
 			);
 			path = Handlers;
@@ -223,7 +220,6 @@
 				4F0D5FC225547C63002B7EEB /* MenuViewModel.swift in Sources */,
 				4FACD24725534964002B745F /* MenuCollectionView.swift in Sources */,
 				4FACD23125534772002B745F /* SceneDelegate.swift in Sources */,
-				4F0D5FB4255477FA002B7EEB /* MenuCollectionViewDelegate.swift in Sources */,
 				4F657B4725534C480045F2C7 /* MenuCollectionViewCell.swift in Sources */,
 				4F0D5FBD25547BD7002B7EEB /* MainCoordinator.swift in Sources */,
 				4F0D5FB725547807002B7EEB /* MenuCollectionViewDataSource.swift in Sources */,
