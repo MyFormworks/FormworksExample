@@ -9,9 +9,9 @@ import Foundation
 import Formworks
 
 
-final class FormDelegate: FWFormDelegate {
-	func result(_ data: Data) {
-		guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else { return }
-		print(json)
-	}
-}
+//final class FormDelegate: FWFormDelegate {
+//	func result(_ data: Data) {
+//		guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else { return }
+//		print(json)
+//	}
+//}

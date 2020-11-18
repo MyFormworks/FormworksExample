@@ -30,7 +30,7 @@ struct MainCoordinator: Coordinator {
 		switch form {
 		case .example:
 			guard let json = getJSON(for: "Example") else { return }
-			let formViewController = FWFormViewController(for: json)
+			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
 			navigationController.pushViewController(formViewController, animated: true)
 		}
 	}
