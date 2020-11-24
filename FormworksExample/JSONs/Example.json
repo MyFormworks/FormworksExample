@@ -1,7 +1,7 @@
 {
 	"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
 	"responseType": "long",
-	"title": "Formworks Title",
+	"title": "Form Title",
 	"style": {
 		"accent": "",
 		"background": "",
@@ -17,7 +17,7 @@
 			"text": {
 				"id": "87986E91-247F-4F36-A577-19DF6BD165D0",
 				"title": "What is your name?",
-				"description": "Type your name.",
+				"description": "",
 				"required": true,
 				"validator": "max32",
 				"placeholder": "Your name",

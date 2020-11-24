@@ -7,8 +7,9 @@
 
 import UIKit
 
+/// It is the `MenuCollectionView` cell. 
 final class MenuCollectionViewCell: UICollectionViewCell {
-    
+    // MARK: Properties
     lazy var button: UIButton = {
         let view = UIButton(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -19,6 +20,7 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         return String(describing: self)
     }
     
+	// MARK: Init
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(button)
@@ -30,6 +32,7 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+	// MARK: Constraints
     private func setupConstraints() {
         let guide = contentView.safeAreaLayoutGuide
         button.clipsToBounds = true
@@ -42,6 +45,8 @@ final class MenuCollectionViewCell: UICollectionViewCell {
         ])
     }
     
+	// MARK: SetupStyle
+	/// Configure `button` properties
     private func setupStyle() {
         button.layer.cornerRadius = 20
         button.titleLabel?.font = UIFont.systemFont(ofSize: 22.0, weight: .bold)

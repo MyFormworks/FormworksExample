@@ -6,9 +6,10 @@
 //
 
 import UIKit
-
+/// Contains and controls `MenuCollectionView`.
 class MenuViewController: UIViewController {
     
+	// MARK: Properties
     let viewModel: MenuViewModel
     var collectionViewDataSource: MenuCollectionViewDataSource?
     
@@ -18,6 +19,7 @@ class MenuViewController: UIViewController {
         return collectionView
     }()
     
+	// MARK: Init
     init(viewModel: MenuViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -28,6 +30,7 @@ class MenuViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+	// MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(collectionView)
@@ -38,6 +41,7 @@ class MenuViewController: UIViewController {
         collectionView.dataSource = collectionViewDataSource
     }
     
+	// MARK: Constraints
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
@@ -47,6 +51,7 @@ class MenuViewController: UIViewController {
         ])
     }
     
+	// MARK: Show `FWFormViewController`
     func presentForm(_ button: UIButton) {
         switch button.tag {
         case 0:

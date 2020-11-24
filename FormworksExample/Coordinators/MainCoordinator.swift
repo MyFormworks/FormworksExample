@@ -8,11 +8,13 @@
 import UIKit
 import Formworks
 
-/// Enum responsible to identify which form will be shown.
+// MARK: `ENUM`
+/// Responsible to identify which form will be shown.
 enum Forms {
 	case example
 }
 
+// MARK: Properties
 /// Class responsible for deal with the navigation among screens.
 struct MainCoordinator: Coordinator {
 	var navigationController: UINavigationController
@@ -30,8 +32,10 @@ struct MainCoordinator: Coordinator {
 		switch form {
 		case .example:
 			guard let json = getJSON(for: "Example") else { return }
-			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
+			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
 			navigationController.pushViewController(formViewController, animated: true)
+//			formViewController.modalPresentationStyle = .fullScreen
+//			navigationController.present(formViewController, animated: true, completion: nil)
 		}
 	}
 	
