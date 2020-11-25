@@ -14,6 +14,9 @@
 		4F0D5FC225547C63002B7EEB /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FC125547C63002B7EEB /* MenuViewModel.swift */; };
 		4F0D5FC5255493DE002B7EEB /* Example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D5FC4255493DD002B7EEB /* Example.json */; };
 		4F0D5FC925549943002B7EEB /* Formworks in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0D5FC825549943002B7EEB /* Formworks */; };
+		4F3EF5F5256EE4E400E9DC87 /* FeedbackForm.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF5F4256EE4E400E9DC87 /* FeedbackForm.json */; };
+		4F3EF5F9256EEBAD00E9DC87 /* CustomRegexes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF5F8256EEBAD00E9DC87 /* CustomRegexes.json */; };
+		4F3EF5FD256EF10F00E9DC87 /* StylizedForm.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF5FC256EF10F00E9DC87 /* StylizedForm.json */; };
 		4F657B4725534C480045F2C7 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F657B4625534C480045F2C7 /* MenuCollectionViewCell.swift */; };
 		4FACD22F25534772002B745F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FACD22E25534772002B745F /* AppDelegate.swift */; };
 		4FACD23125534772002B745F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FACD23025534772002B745F /* SceneDelegate.swift */; };
@@ -30,6 +33,9 @@
 		4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		4F0D5FC125547C63002B7EEB /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		4F0D5FC4255493DD002B7EEB /* Example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Example.json; sourceTree = "<group>"; };
+		4F3EF5F4256EE4E400E9DC87 /* FeedbackForm.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FeedbackForm.json; sourceTree = "<group>"; };
+		4F3EF5F8256EEBAD00E9DC87 /* CustomRegexes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CustomRegexes.json; sourceTree = "<group>"; };
+		4F3EF5FC256EF10F00E9DC87 /* StylizedForm.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StylizedForm.json; sourceTree = "<group>"; };
 		4F657B4625534C480045F2C7 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FACD22B25534772002B745F /* FormworksExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormworksExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FACD22E25534772002B745F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				4F0D5FC4255493DD002B7EEB /* Example.json */,
+				4F3EF5F4256EE4E400E9DC87 /* FeedbackForm.json */,
+				4F3EF5F8256EEBAD00E9DC87 /* CustomRegexes.json */,
+				4F3EF5FC256EF10F00E9DC87 /* StylizedForm.json */,
 			);
 			path = JSONs;
 			sourceTree = "<group>";
@@ -202,8 +211,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FACD23B25534775002B745F /* LaunchScreen.storyboard in Resources */,
+				4F3EF5F9256EEBAD00E9DC87 /* CustomRegexes.json in Resources */,
+				4F3EF5F5256EE4E400E9DC87 /* FeedbackForm.json in Resources */,
 				4F0D5FC5255493DE002B7EEB /* Example.json in Resources */,
 				4FACD23825534775002B745F /* Assets.xcassets in Resources */,
+				4F3EF5FD256EF10F00E9DC87 /* StylizedForm.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

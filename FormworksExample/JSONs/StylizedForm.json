@@ -1,0 +1,30 @@
+{
+    "id": "2222-222-22-2",
+    "responseType": "long",
+    "title": "Custom Regexes",
+    "style": {
+        "accent": "#01A1E1",
+        "background": "#556784",
+        "componentBackground": "#323D4E",
+        "componentTitle": "#01A1E1",
+        "componentDescription": "#FFFFFF",
+        "componentInputText": "#FFFFFF",
+        "componentInputBackground": "#64849C",
+        "componentRequired": "#EB5C21",
+        "componentCorrect": "#01A1E1",
+        "componentPlaceholder": "#F0F0F0"
+    },
+    "components": [
+        {
+            "text": {
+                "id": "001",
+                "title": "Please, insert any URL",
+                "description": "Just valid URLs!",
+                "required": true,
+                "regex": "((?:http|https)://)?(?:www\\.)?[\\w\\d\\-_]+\\.\\w{2,3}(\\.\\w{2})?(/(?<=/)(?:[\\w\\d\\-./_]+)?)?",
+                "placeholder": "www.example.com",
+                "isMultiline": false
+            }
+        }
+    ]
+}

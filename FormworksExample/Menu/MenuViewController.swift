@@ -57,7 +57,13 @@ class MenuViewController: UIViewController {
         case 0:
             self.viewModel.coordinator.present(form: .example)
         case 1:
-            self.viewModel.coordinator.present(form: .example)
+            self.viewModel.coordinator.present(form: .feedback)
+        case 2:
+            self.viewModel.coordinator.present(form: .modal)
+        case 3:
+            self.viewModel.coordinator.present(form: .customRegexes)
+        case 4:
+            self.viewModel.coordinator.present(form: .stylizedForm)
         default:
             break
         }

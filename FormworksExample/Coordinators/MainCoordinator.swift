@@ -12,6 +12,10 @@ import Formworks
 /// Responsible to identify which form will be shown.
 enum Forms {
 	case example
+    case feedback
+    case modal
+    case customRegexes
+    case stylizedForm
 }
 
 // MARK: Properties
@@ -36,6 +40,26 @@ struct MainCoordinator: Coordinator {
 			navigationController.pushViewController(formViewController, animated: true)
 //			formViewController.modalPresentationStyle = .fullScreen
 //			navigationController.present(formViewController, animated: true, completion: nil)
+        
+        case .feedback:
+            guard let json = getJSON(for: "FeedbackForm") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            navigationController.pushViewController(formViewController, animated: true)
+            
+        case .modal:
+            guard let json = getJSON(for: "FeedbackForm") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            navigationController.present(formViewController, animated: true, completion: nil)
+        
+        case .customRegexes:
+            guard let json = getJSON(for: "CustomRegexes") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            navigationController.pushViewController(formViewController, animated: true)
+            
+        case .stylizedForm:
+            guard let json = getJSON(for: "StylizedForm") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            navigationController.pushViewController(formViewController, animated: true)
 		}
 	}
 	

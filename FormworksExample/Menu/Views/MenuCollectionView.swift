@@ -33,7 +33,6 @@ final class MenuCollectionView: UICollectionView {
         let group = NSCollectionLayoutGroup.vertical(layoutSize: groupLayoutSize, subitems: [item])
         
         let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 20
         
         return UICollectionViewCompositionalLayout(section: section)
     }

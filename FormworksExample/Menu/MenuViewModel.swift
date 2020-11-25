@@ -11,7 +11,7 @@ import Foundation
 class MenuViewModel {
 	
 	// MARK: Properties
-    var buttonsNames: [String] = ["Example", "Example 2"]
+    var buttonsNames: [String] = ["Example", "Feedback Form", "Modal Form", "Custom Regexes", "Stylized Form"]
     var coordinator: MainCoordinator
     
 	//MARK: Init

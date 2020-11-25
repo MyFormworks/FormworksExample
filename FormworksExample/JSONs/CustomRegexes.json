@@ -1,0 +1,18 @@
+{
+    "id": "1111-111-11-1",
+    "responseType": "long",
+    "title": "Custom Regexes",
+    "components": [
+        {
+            "text": {
+                "id": "001",
+                "title": "Please, insert any URL",
+                "description": "Just valid URLs!",
+                "required": true,
+                "regex": "((?:http|https)://)?(?:www\\.)?[\\w\\d\\-_]+\\.\\w{2,3}(\\.\\w{2})?(/(?<=/)(?:[\\w\\d\\-./_]+)?)?",
+                "placeholder": "www.example.com",
+                "isMultiline": false
+            }
+        }
+    ]
+}
