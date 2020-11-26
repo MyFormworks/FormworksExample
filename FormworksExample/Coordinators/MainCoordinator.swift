@@ -38,8 +38,6 @@ struct MainCoordinator: Coordinator {
 			guard let json = getJSON(for: "Example") else { return }
 			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
 			navigationController.pushViewController(formViewController, animated: true)
-//			formViewController.modalPresentationStyle = .fullScreen
-//			navigationController.present(formViewController, animated: true, completion: nil)
         
         case .feedback:
             guard let json = getJSON(for: "FeedbackForm") else { return }

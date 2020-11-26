@@ -13,7 +13,6 @@
 		4F0D5FBD25547BD7002B7EEB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FBC25547BD7002B7EEB /* MainCoordinator.swift */; };
 		4F0D5FC225547C63002B7EEB /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0D5FC125547C63002B7EEB /* MenuViewModel.swift */; };
 		4F0D5FC5255493DE002B7EEB /* Example.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F0D5FC4255493DD002B7EEB /* Example.json */; };
-		4F0D5FC925549943002B7EEB /* Formworks in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0D5FC825549943002B7EEB /* Formworks */; };
 		4F3EF5F5256EE4E400E9DC87 /* FeedbackForm.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF5F4256EE4E400E9DC87 /* FeedbackForm.json */; };
 		4F3EF5F9256EEBAD00E9DC87 /* CustomRegexes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF5F8256EEBAD00E9DC87 /* CustomRegexes.json */; };
 		4F3EF5FD256EF10F00E9DC87 /* StylizedForm.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F3EF5FC256EF10F00E9DC87 /* StylizedForm.json */; };
@@ -24,6 +23,7 @@
 		4FACD23825534775002B745F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FACD23725534775002B745F /* Assets.xcassets */; };
 		4FACD23B25534775002B745F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FACD23925534775002B745F /* LaunchScreen.storyboard */; };
 		4FACD24725534964002B745F /* MenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FACD24625534964002B745F /* MenuCollectionView.swift */; };
+		CBB0347625702A8F0099189A /* Formworks in Frameworks */ = {isa = PBXBuildFile; productRef = CBB0347525702A8F0099189A /* Formworks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F0D5FC925549943002B7EEB /* Formworks in Frameworks */,
+				CBB0347625702A8F0099189A /* Formworks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			);
 			name = FormworksExample;
 			packageProductDependencies = (
-				4F0D5FC825549943002B7EEB /* Formworks */,
+				CBB0347525702A8F0099189A /* Formworks */,
 			);
 			productName = FormworksExample;
 			productReference = 4FACD22B25534772002B745F /* FormworksExample.app */;
@@ -194,7 +194,7 @@
 			);
 			mainGroup = 4FACD22225534772002B745F;
 			packageReferences = (
-				4F0D5FC725549943002B7EEB /* XCRemoteSwiftPackageReference "Formworks" */,
+				CBB0347425702A8F0099189A /* XCRemoteSwiftPackageReference "Formworks" */,
 			);
 			productRefGroup = 4FACD22C25534772002B745F /* Products */;
 			projectDirPath = "";
@@ -431,9 +431,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4F0D5FC725549943002B7EEB /* XCRemoteSwiftPackageReference "Formworks" */ = {
+		CBB0347425702A8F0099189A /* XCRemoteSwiftPackageReference "Formworks" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Galdineris/Formworks.git";
+			repositoryURL = "https://github.com/MyFormworks/Formworks.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -442,9 +442,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		4F0D5FC825549943002B7EEB /* Formworks */ = {
+		CBB0347525702A8F0099189A /* Formworks */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4F0D5FC725549943002B7EEB /* XCRemoteSwiftPackageReference "Formworks" */;
+			package = CBB0347425702A8F0099189A /* XCRemoteSwiftPackageReference "Formworks" */;
 			productName = Formworks;
 		};
 /* End XCSwiftPackageProductDependency section */
