@@ -2,6 +2,18 @@
     "id": "0000-000-00-0",
     "responseType": "long",
     "title": "Feedback Form",
+    "style": {
+        "accent": "",
+        "background": "",
+        "componentBackground": "",
+        "componentTitle": "",
+        "componentDescription": "",
+        "componentInputText": "",
+        "componentInputBackground": "",
+        "componentRequired": "",
+        "componentCorrect": "",
+        "componentPlaceholder": ""
+    },
     "components": [
         {
             "text": {
@@ -9,26 +21,23 @@
                 "title": "What is your name?",
                 "description": "Please, insert your name.",
                 "required": true,
-                "validator": "max32",
                 "placeholder": "Your name here!",
                 "isMultiline": false
             }
         },{
-            "text": {
+            "numerical": {
                 "id": "002",
                 "title": "How old are you?",
                 "description": "Please, insert your age.",
                 "required": true,
-                "validator": "numerical",
                 "placeholder": "Your age here!",
                 "isMultiline": false
             }
         },{
-            "text": {
+            "email": {
                 "id": "003",
                 "title": "What is your email?",
                 "description": "Only if do you want to receive news about our products.",
-                "validator": "email",
                 "placeholder": "your@email.com",
                 "isMultiline": false
             }
@@ -38,7 +47,6 @@
                 "title": "What is your opinion about our products?",
                 "description": "Give us your feedback!",
                 "required": true,
-                "validator": "max32",
                 "isMultiline": true
             }
         }

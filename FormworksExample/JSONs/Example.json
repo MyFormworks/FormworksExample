@@ -1,19 +1,26 @@
 {
-    "title": "Formworks Research",
-    "components": [
-        {
-            "title": "What is your name?",
-            "componentType": "plain_text",
-            "errorMessage": "This field is obligatory. Please, answer it.",
-            "required": true,
-            "specs": {
-                "placeholder": "Type your name here."
-            }
-        },
-        {
-            "title": "Leave yout email to contact!",
-            "componentType": "email",
-            "required": false
-        }
-    ]
+  "title": "Artur's Wedding RSVP",
+  "components": [{
+    "text": {
+      "title": "What's your name?",
+      "required": true
+      }
+    },
+    {
+    "email": {
+      "title": "What is your e-mail?"
+      }
+    },
+    {
+    "phonenumber": {
+      "title": "What's your phone number?",
+      "description": "Brazilian phone number formats only."
+      }
+    },
+    {
+    "multiline": {
+        "title": "Would you like to leave a special message to the groom?"
+      }
+    }
+  ]
 }
