@@ -23,7 +23,7 @@
 		4FACD23825534775002B745F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FACD23725534775002B745F /* Assets.xcassets */; };
 		4FACD23B25534775002B745F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FACD23925534775002B745F /* LaunchScreen.storyboard */; };
 		4FACD24725534964002B745F /* MenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FACD24625534964002B745F /* MenuCollectionView.swift */; };
-		CBB0347625702A8F0099189A /* Formworks in Frameworks */ = {isa = PBXBuildFile; productRef = CBB0347525702A8F0099189A /* Formworks */; };
+		CB20641B257154920011D321 /* Formworks in Frameworks */ = {isa = PBXBuildFile; productRef = CB20641A257154920011D321 /* Formworks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBB0347625702A8F0099189A /* Formworks in Frameworks */,
+				CB20641B257154920011D321 /* Formworks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			);
 			name = FormworksExample;
 			packageProductDependencies = (
-				CBB0347525702A8F0099189A /* Formworks */,
+				CB20641A257154920011D321 /* Formworks */,
 			);
 			productName = FormworksExample;
 			productReference = 4FACD22B25534772002B745F /* FormworksExample.app */;
@@ -194,7 +194,7 @@
 			);
 			mainGroup = 4FACD22225534772002B745F;
 			packageReferences = (
-				CBB0347425702A8F0099189A /* XCRemoteSwiftPackageReference "Formworks" */,
+				CB206419257154920011D321 /* XCRemoteSwiftPackageReference "Formworks" */,
 			);
 			productRefGroup = 4FACD22C25534772002B745F /* Products */;
 			projectDirPath = "";
@@ -375,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93JG72P729;
+				DEVELOPMENT_TEAM = W76FRTKWHT;
 				INFOPLIST_FILE = FormworksExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,7 +394,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 93JG72P729;
+				DEVELOPMENT_TEAM = W76FRTKWHT;
 				INFOPLIST_FILE = FormworksExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,7 +431,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CBB0347425702A8F0099189A /* XCRemoteSwiftPackageReference "Formworks" */ = {
+		CB206419257154920011D321 /* XCRemoteSwiftPackageReference "Formworks" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MyFormworks/Formworks.git";
 			requirement = {
@@ -442,9 +442,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CBB0347525702A8F0099189A /* Formworks */ = {
+		CB20641A257154920011D321 /* Formworks */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CBB0347425702A8F0099189A /* XCRemoteSwiftPackageReference "Formworks" */;
+			package = CB206419257154920011D321 /* XCRemoteSwiftPackageReference "Formworks" */;
 			productName = Formworks;
 		};
 /* End XCSwiftPackageProductDependency section */
