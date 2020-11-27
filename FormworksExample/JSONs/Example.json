@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "title": "Artur's Wedding RSVP",
   "components": [{
     "text": {
@@ -24,24 +23,5 @@
       }
     }
   ]
-=======
-	"title": "Formworks Research",
-	"components": [
-		{
-			"title": "What is your name?",
-			"componentType": "plain_text",
-			"errorMessage": "This field is obligatory. Please, answer it.",
-			"required": true,
-			"specs": {
-				"placeholder": "Type your name here."
-			}
-		},
-		{
-			"title": "Leave yout email to contact!",
-			"componentType": "email",
-			"required": false
-		}
-	]
->>>>>>> 3790b269a1b43e49b77d0be7d936f50981a89af9
 }
 
