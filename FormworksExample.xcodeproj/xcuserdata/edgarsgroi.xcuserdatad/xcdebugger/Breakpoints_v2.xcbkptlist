@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4B4CB2CD-0B31-44CB-8D2D-01CD12A8C9D5"
-            shouldBeEnabled = "Yes"
+            uuid = "ECD53B79-9D0F-466A-8320-20D72EEF8CC5"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FormworksExample/Form/FormDelegate.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/FormworksExample-drbeahijqtduxpciyewdxuhklkkn/SourcePackages/checkouts/Formworks/Sources/Formworks/FWForm/FWFormViewModel/FWFormViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "didSubmit(_:)"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "setUp()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

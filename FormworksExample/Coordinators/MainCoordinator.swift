@@ -36,27 +36,27 @@ struct MainCoordinator: Coordinator {
 		switch form {
 		case .example:
 			guard let json = getJSON(for: "Example") else { return }
-			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
 			navigationController.pushViewController(formViewController, animated: true)
         
         case .feedback:
             guard let json = getJSON(for: "FeedbackForm") else { return }
-            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
             navigationController.pushViewController(formViewController, animated: true)
             
         case .modal:
             guard let json = getJSON(for: "FeedbackForm") else { return }
-            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
             navigationController.present(formViewController, animated: true, completion: nil)
         
         case .customRegexes:
             guard let json = getJSON(for: "CustomRegexes") else { return }
-            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
             navigationController.pushViewController(formViewController, animated: true)
             
         case .stylizedForm:
             guard let json = getJSON(for: "StylizedForm") else { return }
-            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .dark))
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .custom(FWStyleSpecification())))
             navigationController.pushViewController(formViewController, animated: true)
 		}
 	}
