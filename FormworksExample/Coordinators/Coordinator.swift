@@ -7,7 +7,8 @@
 
 import UIKit
 
-/// Handle with navigation among the screens.
+
+/// Protocols that handle with the navigation among the screens.
 protocol Coordinator {
 	var navigationController: UINavigationController { get set }
 	

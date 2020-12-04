@@ -8,6 +8,7 @@
 import UIKit
 import Formworks
 
+
 // MARK: `ENUM`
 /// Responsible to identify which form will be shown.
 enum Forms {

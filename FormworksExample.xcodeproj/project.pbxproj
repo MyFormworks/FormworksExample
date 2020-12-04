@@ -45,6 +45,7 @@
 		4FACD23A25534775002B745F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FACD23C25534775002B745F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FACD24625534964002B745F /* MenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionView.swift; sourceTree = "<group>"; };
+		CBD1430C2559F30F00275D39 /* FormDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +231,7 @@
 				4FACD23325534772002B745F /* MenuViewController.swift in Sources */,
 				4FACD22F25534772002B745F /* AppDelegate.swift in Sources */,
 				4F0D5FC225547C63002B7EEB /* MenuViewModel.swift in Sources */,
+				CBD1430D2559F30F00275D39 /* FormDelegate.swift in Sources */,
 				4FACD24725534964002B745F /* MenuCollectionView.swift in Sources */,
 				4FACD23125534772002B745F /* SceneDelegate.swift in Sources */,
 				4F657B4725534C480045F2C7 /* MenuCollectionViewCell.swift in Sources */,

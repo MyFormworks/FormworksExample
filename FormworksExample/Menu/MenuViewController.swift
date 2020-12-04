@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 /// Contains and controls `MenuCollectionView`.
 class MenuViewController: UIViewController {
     
