@@ -8,11 +8,18 @@
 import UIKit
 import Formworks
 
-/// Enum responsible to identify which form will be shown.
+
+// MARK: `ENUM`
+/// Responsible to identify which form will be shown.
 enum Forms {
 	case example
+    case feedback
+    case modal
+    case customRegexes
+    case stylizedForm
 }
 
+// MARK: Properties
 /// Class responsible for deal with the navigation among screens.
 struct MainCoordinator: Coordinator {
 	var navigationController: UINavigationController
@@ -30,8 +37,28 @@ struct MainCoordinator: Coordinator {
 		switch form {
 		case .example:
 			guard let json = getJSON(for: "Example") else { return }
-			let formViewController = FWFormViewController(for: json)
+			let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
 			navigationController.pushViewController(formViewController, animated: true)
+        
+        case .feedback:
+            guard let json = getJSON(for: "FeedbackForm") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
+            navigationController.pushViewController(formViewController, animated: true)
+            
+        case .modal:
+            guard let json = getJSON(for: "FeedbackForm") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
+            navigationController.present(formViewController, animated: true, completion: nil)
+        
+        case .customRegexes:
+            guard let json = getJSON(for: "CustomRegexes") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .light))
+            navigationController.pushViewController(formViewController, animated: true)
+            
+        case .stylizedForm:
+            guard let json = getJSON(for: "StylizedForm") else { return }
+            let formViewController = FWFormViewController(configuration: FWConfiguration(json: json, style: .custom(FWStyleSpecification())))
+            navigationController.pushViewController(formViewController, animated: true)
 		}
 	}
 	

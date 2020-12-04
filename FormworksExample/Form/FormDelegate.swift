@@ -8,10 +8,9 @@
 import Foundation
 import Formworks
 
-final class FormDelegate: FWFormDelegate {
-	
-	func result(_ data: Data) {
-		guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else { return }
-		print(json)
-	}
+/// Delegate that get the answers inputed on form.
+final class FormDelegate: FWFormViewControllerDelegate {
+    func didSubmit(_ answers: FWFormSnapshot) {
+        print(answers)
+    }
 }

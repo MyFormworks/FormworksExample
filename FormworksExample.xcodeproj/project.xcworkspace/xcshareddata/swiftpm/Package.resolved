@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Formworks",
-        "repositoryURL": "https://github.com/Galdineris/Formworks.git",
+        "repositoryURL": "https://github.com/MyFormworks/Formworks.git",
         "state": {
-          "branch": "master",
-          "revision": "674543a025043e75b28f81f4ac5bf5318ab42431",
-          "version": null
+          "branch": null,
+          "revision": "ae4fc603ac245c7b52d783db7efe83c590c57586",
+          "version": "1.0.0"
         }
       }
     ]

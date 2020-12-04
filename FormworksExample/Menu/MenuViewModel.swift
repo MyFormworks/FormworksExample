@@ -7,10 +7,14 @@
 
 import Foundation
 
+/// `MenuCollectionView`'s viewModels. This is where all implementation logic will be.
 class MenuViewModel {
-    var buttonsNames: [String] = ["Example"]
+	
+	// MARK: Properties
+    var buttonsNames: [String] = ["Example", "Feedback Form", "Modal Form", "Custom Regexes", "Stylized Form"]
     var coordinator: MainCoordinator
     
+	//MARK: Init
     init(coordinator: MainCoordinator) {
         self.coordinator = coordinator
     }

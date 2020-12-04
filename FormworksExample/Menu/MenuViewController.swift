@@ -7,10 +7,11 @@
 
 import UIKit
 
+/// Contains and controls `MenuCollectionView`.
 class MenuViewController: UIViewController {
     
+	// MARK: Properties
     let viewModel: MenuViewModel
-    var collectionViewDelegate: MenuCollectionViewDelegate?
     var collectionViewDataSource: MenuCollectionViewDataSource?
     
     private lazy var collectionView: MenuCollectionView = {
@@ -19,6 +20,7 @@ class MenuViewController: UIViewController {
         return collectionView
     }()
     
+	// MARK: Init
     init(viewModel: MenuViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -29,17 +31,18 @@ class MenuViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+	// MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(collectionView)
         setupConstraints()
-        self.collectionViewDelegate = MenuCollectionViewDelegate(viewController: self)
+
         self.collectionViewDataSource = MenuCollectionViewDataSource(viewController: self)
         collectionView.register(MenuCollectionViewCell.self, forCellWithReuseIdentifier: MenuCollectionViewCell.identifier)
-        collectionView.delegate = collectionViewDelegate
         collectionView.dataSource = collectionViewDataSource
     }
     
+	// MARK: Constraints
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             collectionView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
@@ -49,10 +52,19 @@ class MenuViewController: UIViewController {
         ])
     }
     
+	// MARK: Show `FWFormViewController`
     func presentForm(_ button: UIButton) {
         switch button.tag {
         case 0:
             self.viewModel.coordinator.present(form: .example)
+        case 1:
+            self.viewModel.coordinator.present(form: .feedback)
+        case 2:
+            self.viewModel.coordinator.present(form: .modal)
+        case 3:
+            self.viewModel.coordinator.present(form: .customRegexes)
+        case 4:
+            self.viewModel.coordinator.present(form: .stylizedForm)
         default:
             break
         }
