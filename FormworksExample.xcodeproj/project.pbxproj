@@ -435,8 +435,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MyFormworks/Formworks.git";
 			requirement = {
-				branch = "tests/quick-and-nimble";
-				kind = branch;
+				kind = exactVersion;
+				version = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

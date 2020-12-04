@@ -5,9 +5,9 @@
         "package": "Formworks",
         "repositoryURL": "https://github.com/MyFormworks/Formworks.git",
         "state": {
-          "branch": "tests/quick-and-nimble",
-          "revision": "2891bf1e40ada329d4d25bff13cb1f62764badb9",
-          "version": null
+          "branch": null,
+          "revision": "ae4fc603ac245c7b52d783db7efe83c590c57586",
+          "version": "1.0.0"
         }
       }
     ]
